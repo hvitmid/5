@@ -1,0 +1,25 @@
+#include<locale.h>
+#include<stdio.h>
+#include <math.h>
+#include<conio.h>
+#define e  2,71828182845904523536
+#define t 0.3
+
+double otvet(double x)
+{
+	double a = log10(fabs(t * x + pow(t, 2)));
+	double b = t * pow(x, 2) + sqrt(x);
+	double y = log(pow(a, 2) / a + b);
+	return y;
+}
+void main(void)
+{
+	setlocale(LC_ALL, "RUS");
+
+
+	puts("Задание 2");
+	double a, b, x, y;
+	scanf_s("%lf", &x);
+	y = otvet(x,y);
+	printf("y=%lf", y);
+}
