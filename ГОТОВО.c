@@ -6,14 +6,6 @@
 #define t 0.3
 #define e  2,71828182845904523536
 
-double otvet(double x)
-{
-	double a = log10(fabs(t * x + pow(t, 2)));
-	double b = t * pow(x, 2) + sqrt(x);
-	double y = log(pow(a, 2) / a + b);
-	return y;
-}
-
 
 double name(double x, double y, double z)
 {
@@ -43,24 +35,6 @@ void main(void)
 	*/
 	puts("Домашнее задание\n");
 	double sum1, sum2, x, y, z;
-	puts("В понедельник:");
-	puts("продано кг яблок: ");
-	scanf_s("%lf", &x);
-	puts("продано кг груш: ");
-	scanf_s("%lf", &y);
-	puts("продано кг апельсинов: ");
-	scanf_s("%lf", &z);
-	sum1 = name(x, y, z);
 
-	puts("Во вторник:");
-	puts("продано кг яблок: ");
-	scanf_s("%lf", &x);
-	puts("продано кг груш: ");
-	scanf_s("%lf", &y);
-	puts("продано кг апельсинов: ");
-	scanf_s("%lf", &z);
-	sum2 = name(x, y, z);
-	printf("В понедельник продано на %.lf руб\n", sum1);
-	printf("Во вторник продано на %.lf руб\n", sum2);
 
 }
