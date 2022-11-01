@@ -14,6 +14,13 @@ double otvet(double x)
 	return y;
 }
 
+
+double name(double x, double y, double z)
+{
+	double result = x * 1 + y * 2 + z * 3;
+	return result;
+}
+
 void main(void)
 {
 	setlocale(LC_ALL, "RUS");
@@ -43,7 +50,8 @@ void main(void)
 	scanf_s("%lf", &y);
 	puts("продано кг апельсинов: ");
 	scanf_s("%lf", &z);
-	sum1 = x * 1 + y * 2 + z * 3;
+	sum1 = name(x, y, z);
+
 	puts("Во вторник:");
 	puts("продано кг яблок: ");
 	scanf_s("%lf", &x);
@@ -51,7 +59,7 @@ void main(void)
 	scanf_s("%lf", &y);
 	puts("продано кг апельсинов: ");
 	scanf_s("%lf", &z);
-	sum2 = x * 1 + y * 2 + z * 3;
+	sum2 = name(x, y, z);
 	printf("В понедельник продано на %.lf руб\n", sum1);
 	printf("Во вторник продано на %.lf руб\n", sum2);
 
