@@ -26,10 +26,33 @@ void main(void)
 	printf("%.1f градусов= %.6f\n", gr1, sin(gr1 * M_PI / 180));
 	printf("%.1f градусов= %.6f\n", gr2, gr2 * M_PI / 180);
 	printf("%.1f градусов= %.6f\n", gr3, gr3 * M_PI / 180);
-	*/
+
+
 	puts("Задание 2");
-	double a, b, x, y ,f;
+	double a, b, x, y, f;
 	scanf_s("%lf", &x);
 	f = otvet(x, y);
-	printf("y=%lf",f);
+	printf("y=%lf", f);
+	*/
+	puts("Домашнее задание\n");
+	double sum1, sum2, x, y, z;
+	puts("В понедельник:");
+	puts("продано кг яблок: ");
+	scanf_s("%lf", &x);
+	puts("продано кг груш: ");
+	scanf_s("%lf", &y);
+	puts("продано кг апельсинов: ");
+	scanf_s("%lf", &z);
+	sum1 = x * 1 + y * 2 + z * 3;
+	puts("Во вторник:");
+	puts("продано кг яблок: ");
+	scanf_s("%lf", &x);
+	puts("продано кг груш: ");
+	scanf_s("%lf", &y);
+	puts("продано кг апельсинов: ");
+	scanf_s("%lf", &z);
+	sum2 = x * 1 + y * 2 + z * 3;
+	printf("В понедельник продано на %.lf руб\n", sum1);
+	printf("Во вторник продано на %.lf руб\n", sum2);
+
 }
