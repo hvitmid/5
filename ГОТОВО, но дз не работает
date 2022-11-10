@@ -32,14 +32,13 @@ int main(void)
 	y = otvet(x);
 	printf("y=%lf", y);
 	*/
+
 	puts("Домашнее задание");
 	double F, x, y;
 	puts("Введите x");
 	scanf_s("%lf", &x);
 	puts("Введите y");
 	scanf_s("%lf", &y);
-	F = (pow(e, pow(x, 3)) + pow(cos(x - 4), 2)) / (atan(x) + 5.2 * y);
+	F = (exp(pow(x, 3)) + pow(cos(x - 4), 2)) / (atan(x) + 5.2 * y);
 	printf("F(x,y)= %.6lf", F);
-
-
 }
